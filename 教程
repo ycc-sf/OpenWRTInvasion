@@ -1,0 +1,21 @@
+https://www.bilibili.com/opus/900223427282993241
+
+
+
+小米路由器4A千兆版 开启ssh
+
+bili_57896999574
+编辑于 2024年02月21日 06:06
+1. 降级为固件为 小米路由器4A千兆版v2(r4ag v2) 2.30.500 
+
+https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/r4av2/miwifi_r4av2_firmware_6bdd4_2.30.500.bin
+
+2. 下载刷机工具包，运行漏洞脚本 https://github.com/LordPinhead/OpenWRTInvasion 注意不是 https://github.com/acecilia/OpenWRTInvasion 版本
+
+3. 获取ssh权限
+
+pip install -r requirements.txt
+
+python remote_command_execution_vulnerability.py 需运行两次
+
+4. telnet 192.168.31.1  用户名root 密码root
